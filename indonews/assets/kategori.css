@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 150px;
+    box-shadow: 0px 0px 5px 0px rgba(125, 125, 125, 0.75);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.header .container form input {
+    width: 450px;
+    border: 1px solid #1a63ad;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.header .container form button {
+    border: 1px solid #1a63ad;
+    border-radius: 20px;
+    background-color: #1a63ad;
+    color: #fff;
+    padding: 5px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header .container form button:hover {
+    background-color: #fff;
+    color: #1a63ad;
+    border: 1px solid #1a63ad;
+}
+
+.header .container .tntngkm {
+    display: flex;
+    align-items: center;
+}
+
+.header .container .tntngkm button {
+    background-color: #fff;
+    color: #1a63ad;
+    border: 2px solid #1a63ad;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.header .container .tntngkm button:hover {
+    background-color: #1a63ad;
+    color: #fff;
+}
+
+.header .container i {
+    display: flex;
+    align-items: center;
+    color: #1a63ad;
+    font-size: 28px;
+    cursor: pointer;
+} 
+
+
+.wrapper {
+    margin: 50px 150px;
+}
+
+.wrapper .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .container .kategori-list {
+    background-color: #1a63ad;
+    border-radius: 10px;
+}
+
+.wrapper .container .kategori-list .collapse .navbar-nav {
+    column-gap: 30px;
+    padding: 0 20px;
+}
+
+.wrapper .container .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+}
+
+
+
+
+.wrapper .container .content .c-brt {
+    grid-area: 1 / 1 / 2 / 2;
+    height: fit-content;
+    border: 2px solid #1a63ad;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+} 
+
+.wrapper .container .content .c-brt .brt {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .container .content .c-brt .brt a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper .container .content .c-brt .brt .isi {
+    font-size: 12px;
+    margin: 5px 0 10px;
+}
+
+.wrapper .container .content .c-brt .brt .tnggl_b {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+.wrapper .container .content .c-fot {
+    grid-area: 1 / 2 / 2 / 3;
+    height: fit-content;
+    border: 2px solid #1a63ad;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.wrapper .container .content .c-vid{
+    grid-area: 1 / 3 / 2 / 4;
+    height: fit-content;
+    border: 2px solid #1a63ad;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.wrapper .container .content .c-fot .for,
+.wrapper .container .content .c-vid .vid {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .container .content .c-fot .fot a,
+.wrapper .container .content .c-vid .vid a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper .container .content .c-fot .fot p,
+.wrapper .container .content .c-vid .vid p {
+    font-size: 12px;
+}
+
+.wrapper .container .content .c-fot .fot img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.wrapper .container .content .c-vid .vid video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 150px 30px;
+    background-color: #eee;
+    row-gap: 30px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 100px;
+}
+
+.footer .container .comp {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    row-gap: 30px;
+}
+
+.footer .container .comp img {
+    width: 240px;
+}
+
+.footer .container .comp p {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.footer .container .ktg, .lyn, .inf, .jar {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer .container .ktg h5,
+.footer .container .lyn h5,
+.footer .container .inf h5,
+.footer .container .jar h5 {
+    font-size: 16px;
+}
+
+.footer .container .ktg ul,
+.footer .container .lyn ul,
+.footer .container .inf ul,
+.footer .container .jar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    font-size: 12px;
+    padding: 0;
+}
+
+.footer .cr {
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0px 0px 5px 0px rgba(125, 125, 125, 0.75);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.header .container form {
+    display: none;
+}
+
+.header .container .tntngkm {
+    display: none;
+}
+
+.header .container i {
+    display: flex;
+    align-items: center;
+    color: #1a63ad;
+    font-size: 28px;
+}
+
+
+.wrapper {
+    margin: 30px;
+}
+
+.wrapper .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .container .kategori-list {
+    background-color: #1a63ad;
+    border-radius: 10px;
+}
+
+.wrapper .container .kategori-list button {
+    margin-left: 80%;
+}
+
+.wrapper .container .kategori-list .collapse .navbar-nav {
+    row-gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.wrapper .container .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    row-gap: 30px;
+}
+
+
+
+
+.wrapper .container .content .c-brt {
+    height: fit-content;
+    border: 2px solid #1a63ad;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+} 
+
+.wrapper .container .content .c-brt .brt {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .container .content .c-brt .brt a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper .container .content .c-brt .brt .isi {
+    font-size: 12px;
+    margin: 5px 0 10px;
+}
+
+.wrapper .container .content .c-brt .brt .tnggl_b {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+
+.wrapper .container .content .c-fot {
+    height: fit-content;
+    border: 2px solid #1a63ad;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.wrapper .container .content .c-vid{
+    height: fit-content;
+    border: 2px solid #1a63ad;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.wrapper .container .content .c-fot .for,
+.wrapper .container .content .c-vid .vid {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .container .content .c-fot .fot a,
+.wrapper .container .content .c-vid .vid a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+.wrapper .container .content .c-fot .fot p,
+.wrapper .container .content .c-vid .vid p {
+    font-size: 12px;
+}
+
+.wrapper .container .content .c-fot .fot img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.wrapper .container .content .c-vid .vid video{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #eee;
+    row-gap: 30px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .comp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 20px;
+}
+
+.footer .container .comp img {
+    width: 180px;
+}
+
+.footer .container .comp p {
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.footer .container .ktg, .lyn, .inf, .jar {
+    display: none;
+}
+
+.footer .cr {
+    font-size: 12px;
+    text-align: center;
+}
+
+}
